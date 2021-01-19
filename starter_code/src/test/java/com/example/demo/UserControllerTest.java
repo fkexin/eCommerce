@@ -37,7 +37,7 @@ public class UserControllerTest {
     @Test
     public void createUserFailure(){
         ResponseEntity<User> responseEntity = userController.createUser(
-                createAUserRequest("testUser", "pass", "confirmpass")
+                createAUserRequest("testUser", "password", "confirmpass")
         );
 
         assertEquals(HttpStatus.BAD_REQUEST, responseEntity.getStatusCode());
@@ -50,7 +50,7 @@ public class UserControllerTest {
         when(bCryptPasswordEncoder.encode("pass")).thenReturn(ENCODED_PASSWORD);
 
         ResponseEntity<User> responseEntity = userController.createUser(
-                createAUserRequest("testUser", "pass", "pass")
+                createAUserRequest("testUser", "password1", "password1")
         );
 
         assertEquals(HttpStatus.OK, responseEntity.getStatusCode());
