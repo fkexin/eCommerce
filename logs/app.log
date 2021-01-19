@@ -1,0 +1,15 @@
+2021-01-18 21:06:30,748 INFO c.e.d.SareetaApplication [main] Starting SareetaApplication using Java 1.8.0_181 on Kexins-MBP-2 with PID 47874 (/Users/kexin/Documents/Java Web Dev/eCommerce Application/starter_code/target/classes started by kexin in /Users/kexin/Documents/Java Web Dev/eCommerce Application)
+2021-01-18 21:06:30,761 DEBUG c.e.d.SareetaApplication [main] Running with Spring Boot v2.4.1, Spring v5.3.2
+2021-01-18 21:06:30,761 INFO c.e.d.SareetaApplication [main] No active profile set, falling back to default profiles: default
+2021-01-18 21:06:38,008 DEBUG c.e.d.s.JWTAuthenticationVerificationFilter [main] Filter 'JWTAuthenticationVerificationFilter' configured for use
+2021-01-18 21:06:39,353 INFO c.e.d.SareetaApplication [main] Started SareetaApplication in 9.302 seconds (JVM running for 11.651)
+2021-01-18 21:07:15,541 INFO c.e.d.c.UserController [http-nio-8080-exec-2] create user: new request
+2021-01-18 21:07:15,542 ERROR c.e.d.c.UserController [http-nio-8080-exec-2] create user: failed. passwords do not match.
+2021-01-18 21:07:20,405 INFO c.e.d.c.UserController [http-nio-8080-exec-3] create user: new request
+2021-01-18 21:07:20,859 INFO c.e.d.c.UserController [http-nio-8080-exec-3] create user: new user created
+2021-01-18 21:13:45,845 INFO c.e.d.c.UserController [http-nio-8080-exec-1] add item to cart: new request
+2021-01-18 21:13:46,347 INFO c.e.d.c.UserController [http-nio-8080-exec-1] add item to cart: item added to cart
+2021-01-18 21:14:48,580 INFO c.e.d.c.UserController [http-nio-8080-exec-3] submit order: new request
+2021-01-18 21:14:48,629 INFO c.e.d.c.UserController [http-nio-8080-exec-3] submit order: new order submitted
+2021-01-18 21:15:24,591 INFO c.e.d.c.UserController [http-nio-8080-exec-6] get order history: new request
+2021-01-18 21:15:24,596 INFO c.e.d.c.UserController [http-nio-8080-exec-6] get order history: order history found

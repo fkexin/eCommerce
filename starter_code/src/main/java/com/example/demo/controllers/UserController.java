@@ -59,6 +59,11 @@ public class UserController {
 	@PostMapping("/create")
 	public ResponseEntity<User> createUser(@RequestBody CreateUserRequest createUserRequest) {
 		logger.info("create user: new request");
+		// password too short
+		if(createUserRequest.getPassword().length() < 8){
+			logger.error("create user: failed. passwords too short.");
+			return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
+		}
 		// passwords do not match
 		if(!createUserRequest.getPassword().equals(createUserRequest.getConfirmedPassword())){
 			logger.error("create user: failed. passwords do not match.");
